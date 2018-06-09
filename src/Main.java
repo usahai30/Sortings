@@ -19,7 +19,9 @@ public class Main {
 				
 		for(int n=10000;n<=50000;n=n+10000)
 		{
-			System.out.print("\nInput Size: "+n);
+			//System.out.print("\nInput Size: "+n);
+			
+			System.out.print("\n"+n);
 			int arr[] = new int[n];
 			int arr2[] = new int[n];
 			int arr3[] = new int[n];
@@ -35,23 +37,26 @@ public class Main {
 			start = System.nanoTime();
 			isort.Sort(arr);
 			end = System.nanoTime();			
-			System.out.print(" | Insertion Sort - "+((end-start)));
+			//System.out.print(" | Insertion Sort - "+((end-start)));
+			System.out.print(" "+((end-start)));
 			
 			start = System.nanoTime();
 			ssort.Sort(arr2);
 			end = System.nanoTime();
-			System.out.print(" | Selection Sort - "+((end-start)));
+			//System.out.print(" | Selection Sort - "+((end-start)));
+			System.out.print(" "+((end-start)));
 			
 			start = System.nanoTime();
 			msort.Sort(arr3, 0, arr3.length-1);
 			end = System.nanoTime();			
-			System.out.print(" | Merge Sort - "+((end-start)));
+			//System.out.print(" | Merge Sort - "+((end-start)));
+			System.out.print(" "+((end-start)));
 			
 			start = System.nanoTime();
 			qsort.Sort(arr4, 0, arr4.length-1);
 			end = System.nanoTime();			
-			System.out.print(" | Quick Sort - "+((end-start)));
-			
+			//System.out.print(" | Quick Sort - "+((end-start)));
+			System.out.print(" "+((end-start)));
 			
 		}
 		
